@@ -16,5 +16,6 @@ app/release/
 
 # Playwright MCP debug output
 .playwright-mcp/
-# Root-level debug screenshots
+# Root-level debug screenshots (but keep the README hero screenshot)
 /*.png
+!/screenshot.png

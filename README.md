@@ -17,7 +17,7 @@
 ## Screenshots
 
 <p align="center">
-  <img src="play-assets/phone-screenshot-1.png" width="32%" alt="Map with nearby chargers" />
+  <img src="screenshot.png" width="32%" alt="SG EV Charging — map with nearby chargers" />
   <img src="play-assets/phone-screenshot-2.png" width="32%" alt="Result card and station chips" />
 </p>
 
@@ -37,6 +37,8 @@ Key features:
 - Show operator, plug type, power rating, and last-updated metadata.
 - Open turn-by-turn directions in Google Maps.
 - Map-first interface with nearby charging chips for quick station switching.
+- Bottom navigation with **Map**, **Feedback** (send a message via WhatsApp), and **About** tabs.
+- In-app attribution linking the official **LTA DataMall** government data source.
 
 ## Tech Stack
 
