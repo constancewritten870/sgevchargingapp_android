@@ -13,3 +13,8 @@ local.properties
 *.jks
 release/
 app/release/
+
+# Playwright MCP debug output
+.playwright-mcp/
+# Root-level debug screenshots
+/*.png

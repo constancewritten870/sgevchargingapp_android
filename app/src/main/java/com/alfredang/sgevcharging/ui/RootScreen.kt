@@ -30,6 +30,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -37,6 +38,7 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -55,7 +57,7 @@ import com.alfredang.sgevcharging.ui.theme.BrandSecondary
 
 private const val LTA_DATAMALL_URL = "https://datamall.lta.gov.sg/content/datamall/en.html"
 private const val DEVELOPER_URL = "https://www.tertiaryinfotech.com"
-private const val FEEDBACK_EMAIL = "angch@tertiaryinfotech.com"
+private const val FEEDBACK_WHATSAPP = "6588666375"
 
 /**
  * App shell with a bottom navigation bar: Map, Feedback, and About — mirroring the
@@ -112,6 +114,9 @@ fun RootScreen(
 @Composable
 private fun FeedbackScreen() {
     val uriHandler = LocalUriHandler.current
+    var title by remember { mutableStateOf("") }
+    var message by remember { mutableStateOf("") }
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -127,31 +132,48 @@ private fun FeedbackScreen() {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
+                .verticalScroll(rememberScrollState())
                 .padding(20.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
-            Text(
-                "We'd love your feedback",
-                fontWeight = FontWeight.Bold,
-                fontSize = 22.sp,
-            )
+            Text("We'd love your feedback", fontWeight = FontWeight.Bold, fontSize = 22.sp)
             Text(
                 "Found a bug, missing a charging point, or have an idea to make SG EV " +
-                    "Charging better? Send us a note — we read every message.",
+                    "Charging better? Send us a message on WhatsApp.",
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 fontSize = 15.sp,
             )
+            OutlinedTextField(
+                value = title,
+                onValueChange = { title = it },
+                label = { Text("Title") },
+                singleLine = true,
+                modifier = Modifier.fillMaxWidth(),
+            )
+            OutlinedTextField(
+                value = message,
+                onValueChange = { message = it },
+                label = { Text("Message") },
+                minLines = 4,
+                modifier = Modifier.fillMaxWidth(),
+            )
             Button(
                 onClick = {
-                    val subject = "SG EV Charging feedback (v${BuildConfig.VERSION_NAME})"
-                    uriHandler.openUri("mailto:$FEEDBACK_EMAIL?subject=${subject.replace(" ", "%20")}")
+                    val body = buildString {
+                        if (title.isNotBlank()) append("*").append(title.trim()).append("*\n")
+                        append(message.trim())
+                        append("\n\n— sent from SG EV Charging v${BuildConfig.VERSION_NAME}")
+                    }
+                    val encoded = java.net.URLEncoder.encode(body, "UTF-8")
+                    uriHandler.openUri("https://wa.me/$FEEDBACK_WHATSAPP?text=$encoded")
                 },
+                enabled = title.isNotBlank() || message.isNotBlank(),
                 colors = ButtonDefaults.buttonColors(containerColor = BrandPrimary),
                 shape = RoundedCornerShape(8.dp),
             ) {
                 Icon(Icons.AutoMirrored.Filled.Send, contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
-                Text("Email feedback", fontWeight = FontWeight.SemiBold)
+                Text("Send via WhatsApp", fontWeight = FontWeight.SemiBold)
             }
         }
     }
