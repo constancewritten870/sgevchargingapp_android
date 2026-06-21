@@ -1,0 +1,90 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img
+      - progressbar
+      - generic:
+        - img
+        - generic: Loading Google Play Console
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "Google Play Console logo" [ref=e7] [cursor=pointer]:
+          - /url: /console/u/0/developers/4722227264647952214/app-list
+          - button "Google Play Console logo" [ref=e8]
+        - generic [ref=e9]:
+          - button "Notifications Open notification center" [ref=e15]:
+            - img [ref=e19]: notifications
+            - generic [ref=e21]: Notifications
+          - button "Switch developer accounts" [ref=e26] [cursor=pointer]:
+            - img "Switch developer accounts" [ref=e28]
+    - navigation [ref=e34]:
+      - list [ref=e35]:
+        - listitem "Home" [ref=e38]:
+          - button "Home" [ref=e39] [cursor=pointer]:
+            - img [ref=e42]: features
+            - generic [ref=e43]: Home
+        - listitem "Policy status" [ref=e46]:
+          - button "Policy status" [ref=e47] [cursor=pointer]:
+            - img [ref=e50]: android_security_privacy_safe
+            - generic [ref=e51]: Policy status
+        - listitem "Users and permissions" [ref=e54]:
+          - button "Users and permissions" [ref=e55] [cursor=pointer]:
+            - img [ref=e58]: user_attributes
+            - generic [ref=e59]: Users and permissions
+        - listitem "Order management" [ref=e62]:
+          - button "Order management" [ref=e63] [cursor=pointer]:
+            - img [ref=e66]: credit_card
+            - generic [ref=e67]: Order management
+        - listitem "Download reports" [ref=e70]:
+          - button "Download reports" [ref=e71] [cursor=pointer]:
+            - img [ref=e73]: arrow_right
+            - img [ref=e76]: download
+            - generic [ref=e77]: Download reports
+        - listitem "Developer account" [ref=e80]:
+          - button "Developer account" [ref=e81] [cursor=pointer]:
+            - img [ref=e84]: badge
+            - generic [ref=e85]: Developer account
+        - listitem "Activity log" [ref=e88]:
+          - button "Activity log" [ref=e89] [cursor=pointer]:
+            - img [ref=e92]: description
+            - generic [ref=e93]: Activity log
+        - listitem "Settings" [ref=e96]:
+          - button "Settings" [ref=e97] [cursor=pointer]:
+            - img [ref=e100]: settings
+            - generic [ref=e101]: Settings
+        - listitem "Help" [ref=e104]:
+          - button "Help" [ref=e105] [cursor=pointer]:
+            - img [ref=e108]: contact_support
+            - generic [ref=e109]: Help
+        - listitem "Android developer verification" [ref=e112]:
+          - button "Android developer verification" [ref=e113] [cursor=pointer]:
+            - img [ref=e116]: app_promotion
+            - generic [ref=e117]: Android developer verification
+    - generic [ref=e119]:
+      - generic [ref=e132]:
+        - img [ref=e134]
+        - generic [ref=e135]:
+          - heading "Tertiary Infotech Academy" [level=1] [ref=e141]
+          - generic [ref=e148]:
+            - generic [ref=e149]: Personal account
+            - img [ref=e151]: brightness_1
+            - generic [ref=e152]: "Account ID: 4722227264647952214"
+      - generic [ref=e163]:
+        - generic [ref=e164]:
+          - link "Product updates" [ref=e165] [cursor=pointer]:
+            - /url: https://play.google.com/console/about/whats-new/
+          - link "Status dashboard" [ref=e166] [cursor=pointer]:
+            - /url: https://status.play.google.com/
+          - link "Help" [ref=e167] [cursor=pointer]:
+            - /url: /console/u/0/developers/4722227264647952214/help-and-support
+        - generic [ref=e168]:
+          - generic [ref=e169]: © 2026 Google
+          - link "Privacy" [ref=e170] [cursor=pointer]:
+            - /url: https://www.google.com/policies/privacy/
+          - link "Developer Distribution Agreement" [ref=e171] [cursor=pointer]:
+            - /url: https://play.google.com/about/developer-distribution-agreement.html
+          - link "Terms of Service" [ref=e172] [cursor=pointer]:
+            - /url: https://play.google.com/about/console/terms-of-service/

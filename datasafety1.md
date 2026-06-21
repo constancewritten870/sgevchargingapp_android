@@ -1,0 +1,98 @@
+- generic [ref=e22]:
+  - generic [ref=e187]:
+    - generic [ref=e191]:
+      - link "Go back to App content" [ref=e194] [cursor=pointer]:
+        - /url: /console/u/0/developers/4722227264647952214/app/4974001653629553328/app-content/overview
+        - img [ref=e198]: keyboard_backspace
+        - generic [ref=e199]: App content
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - heading "Data safety" [level=1] [ref=e208]
+          - generic [ref=e213]:
+            - button "Export to CSV" [ref=e214]:
+              - generic [ref=e217]: Export to CSV
+            - button "Import from CSV" [ref=e218]:
+              - generic [ref=e221]: Import from CSV
+        - generic [ref=e226]:
+          - text: Help users understand how your app collects and shares their data.
+          - button "Show more details about Data safety" [ref=e227] [cursor=pointer]: Show more
+    - generic [ref=e233]:
+      - tablist [ref=e234]:
+        - tab "Step 1 of 5, Overview" [disabled] [ref=e235]:
+          - img [ref=e373]: check
+          - generic [ref=e240]: Overview
+        - tab "Step 2 of 5, Data collection and security" [active] [selected] [ref=e242] [cursor=pointer]:
+          - generic [ref=e245]: "2"
+          - generic [ref=e247]: Data collection and security
+        - tab "Step 3 of 5, Data types" [disabled] [ref=e249]:
+          - generic [ref=e252]: "3"
+          - generic [ref=e254]: Data types
+        - tab "Step 4 of 5, Data usage and handling" [disabled] [ref=e256]:
+          - generic [ref=e259]: "4"
+          - generic [ref=e261]: Data usage and handling
+        - tab "Step 5 of 5, Preview" [disabled] [ref=e263]:
+          - generic [ref=e266]: "5"
+          - generic [ref=e268]: Preview
+      - tabpanel [ref=e270]:
+        - generic [ref=e376]:
+          - heading "Data collection and security" [level=2] [ref=e385]
+          - generic [ref=e389]:
+            - group [ref=e391]:
+              - generic [ref=e394]:
+                - text: Review the list of required user data types that you need to disclose.
+                - link "View required data types, Opens in a new tab" [ref=e396] [cursor=pointer]:
+                  - /url: https://support.google.com/googleplay/android-developer/answer/10787469?hl=en#types
+                  - text: View required data types
+            - group [ref=e398]:
+              - generic [ref=e400]:
+                - generic [ref=e401]: Does your app collect or share any of the required user data types?
+                - radiogroup "Does your app collect or share any of the required user data types?" [ref=e402]:
+                  - generic [ref=e403] [cursor=pointer]:
+                    - radio "Yes" [ref=e405]
+                    - generic [ref=e408]: "Yes"
+                - radiogroup "Does your app collect or share any of the required user data types?" [ref=e409]:
+                  - generic [ref=e410] [cursor=pointer]:
+                    - radio "No" [ref=e412]
+                    - generic [ref=e415]: "No"
+            - generic [ref=e418]:
+              - heading "Additional badges" [level=3] [ref=e424]
+              - generic [ref=e426]: You may be eligible to show additional badges on your store listing. Showing badges on your store listing can help differentiate your app, and increase user trust.
+            - group [ref=e428]:
+              - generic [ref=e430]:
+                - heading "Independent security review" [level=4] [ref=e439]
+                - text: Have your app independently reviewed against a global security standard
+                - button "Learn more about independent security review" [ref=e443] [cursor=pointer]:
+                  - generic [ref=e446]: Learn more
+            - group [ref=e448]:
+              - generic [ref=e450]:
+                - heading "UPI Payments verified" [level=4] [ref=e459]
+                - text: If you have a finance app operating in India which is utilizing the unified payments interface (UPI), you can have your app accredited by the National Payments Corporation of India (NPCI)
+                - button "Learn more about UPI payments" [ref=e463] [cursor=pointer]:
+                  - generic [ref=e466]: Learn more
+      - generic [ref=e332]: Step 2 of 5, Data collection and security
+    - generic [ref=e339]:
+      - button "Next" [disabled] [ref=e341]:
+        - generic [ref=e344]: Next
+      - generic [ref=e345]:
+        - button "Back" [ref=e468]:
+          - generic [ref=e471]: Back
+        - button "Save draft" [disabled] [ref=e473]:
+          - generic [ref=e476]: Save draft
+        - button "Discard changes" [disabled] [ref=e478]:
+          - generic [ref=e481]: Discard changes
+  - generic [ref=e30]:
+    - generic [ref=e363]:
+      - link "Product updates" [ref=e364] [cursor=pointer]:
+        - /url: https://play.google.com/console/about/whats-new/
+      - link "Status dashboard" [ref=e365] [cursor=pointer]:
+        - /url: https://status.play.google.com/
+      - link "Help" [ref=e366] [cursor=pointer]:
+        - /url: /console/u/0/developers/4722227264647952214/help-and-support?app=4974001653629553328
+    - generic [ref=e367]:
+      - generic [ref=e368]: © 2026 Google
+      - link "Privacy" [ref=e369] [cursor=pointer]:
+        - /url: https://www.google.com/policies/privacy/
+      - link "Developer Distribution Agreement" [ref=e370] [cursor=pointer]:
+        - /url: https://play.google.com/about/developer-distribution-agreement.html
+      - link "Terms of Service" [ref=e371] [cursor=pointer]:
+        - /url: https://play.google.com/about/console/terms-of-service/

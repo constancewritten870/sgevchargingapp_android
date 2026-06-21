@@ -1,0 +1,222 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img
+      - progressbar
+      - generic:
+        - img
+        - generic: Loading Google Play Console
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "Google Play Console logo" [ref=e7] [cursor=pointer]:
+          - /url: /console/u/0/developers/4722227264647952214/app-list
+          - button "Google Play Console logo" [ref=e8]
+        - generic [ref=e9]:
+          - button "Notifications Open notification center" [ref=e129]:
+            - img [ref=e133]: notifications
+            - generic [ref=e135]: Notifications
+          - generic [ref=e10]:
+            - button "SG EV Charging" [ref=e143] [cursor=pointer]:
+              - generic [ref=e147]:
+                - img [ref=e149]
+                - generic [ref=e153]: SG EV Charging
+            - button "Switch developer accounts" [ref=e14] [cursor=pointer]:
+              - img "Switch developer accounts" [ref=e16]
+    - navigation [ref=e156]:
+      - link "All apps" [ref=e157] [cursor=pointer]:
+        - /url: /console/u/0/developers/4722227264647952214/app-list
+        - img [ref=e159]: keyboard_backspace
+        - generic [ref=e160]: All apps
+      - list [ref=e161]:
+        - listitem "Dashboard" [ref=e164]:
+          - button "Dashboard" [ref=e165] [cursor=pointer]:
+            - img [ref=e168]: dashboard
+            - generic [ref=e169]: Dashboard
+        - listitem "Statistics" [ref=e172]:
+          - button "Statistics" [ref=e173] [cursor=pointer]:
+            - img [ref=e176]: bar_chart
+            - generic [ref=e177]: Statistics
+        - listitem "Publishing overview" [ref=e180]:
+          - button "Publishing overview" [ref=e181] [cursor=pointer]:
+            - img [ref=e184]: overview
+            - generic [ref=e185]: Publishing overview
+        - listitem "Protected with Play" [ref=e188]:
+          - button "Protected with Play" [ref=e189] [cursor=pointer]:
+            - img [ref=e192]: shield
+            - generic [ref=e193]: Protected with Play
+        - listitem "Test and release" [ref=e196]:
+          - button "Test and release" [ref=e197] [cursor=pointer]:
+            - img [ref=e200]: rocket_launch
+            - generic [ref=e201]: Test and release
+        - listitem "Monitor and improve" [ref=e204]:
+          - button "Monitor and improve" [ref=e205] [cursor=pointer]:
+            - img [ref=e208]: vital_signs
+            - generic [ref=e209]: Monitor and improve
+          - list [ref=e210]:
+            - generic [ref=e212]:
+              - listitem "Reach and devices" [ref=e214]:
+                - button "Reach and devices" [ref=e215] [cursor=pointer]:
+                  - generic [ref=e216]: Reach and devices
+                  - img [ref=e218]: expand_more
+              - listitem "Ratings and reviews" [ref=e220]:
+                - button "Ratings and reviews" [ref=e221] [cursor=pointer]:
+                  - generic [ref=e222]: Ratings and reviews
+                  - img [ref=e224]: expand_more
+              - listitem "Android vitals" [ref=e226]:
+                - button "Android vitals" [ref=e227] [cursor=pointer]:
+                  - generic [ref=e228]: Android vitals
+                  - img [ref=e230]: expand_more
+              - listitem "Policy and programs" [ref=e232]:
+                - button "Policy and programs" [ref=e233] [cursor=pointer]:
+                  - generic [ref=e234]: Policy and programs
+                  - img [ref=e236]: expand_less
+                - list [ref=e237]:
+                  - generic [ref=e239]:
+                    - listitem "Policy status" [ref=e241]:
+                      - button "Policy status" [ref=e242] [cursor=pointer]:
+                        - generic [ref=e243]: Policy status
+                    - listitem "App content" [ref=e245]:
+                      - button "App content" [ref=e246] [cursor=pointer]:
+                        - generic [ref=e247]: App content
+                    - listitem "Teacher Approved" [ref=e249]:
+                      - button "Teacher Approved" [ref=e250] [cursor=pointer]:
+                        - generic [ref=e251]: Teacher Approved
+        - listitem "Grow users" [ref=e254]:
+          - button "Grow users" [ref=e255] [cursor=pointer]:
+            - img [ref=e258]: finance_mode
+            - generic [ref=e259]: Grow users
+        - listitem "Monetize with Play" [ref=e262]:
+          - button "Monetize with Play" [ref=e263] [cursor=pointer]:
+            - img [ref=e266]: sell
+            - generic [ref=e267]: Monetize with Play
+    - generic [ref=e22]:
+      - generic [ref=e270]:
+        - generic [ref=e274]:
+          - link "Go back to Policy status" [ref=e277] [cursor=pointer]:
+            - /url: /console/u/0/developers/4722227264647952214/app/4974001653629553328/policy-center
+            - img [ref=e281]: keyboard_backspace
+            - generic [ref=e282]: Policy status
+          - heading "Issue details" [level=1] [ref=e291]
+        - generic [ref=e293]:
+          - generic [ref=e296]:
+            - generic [ref=e299]:
+              - generic [ref=e300]:
+                - 'heading "Misleading Claims policy: Violation of Misleading Claims policy" [level=2] [ref=e309]'
+                - paragraph [ref=e311]:
+                  - generic [ref=e312]:
+                    - paragraph [ref=e313]: "Your app has the following functionality issue(s):"
+                    - list [ref=e314]:
+                      - listitem [ref=e315]:
+                        - strong [ref=e316]: Missing Source Link for Government Information
+                        - text: Your app provides government information but lacks one or more clear and accessible URL/link(s) to the original source(s) (for example, .gov domains).
+                    - paragraph [ref=e317]:
+                      - text: Your app contains content that doesn't comply with the
+                      - link "Misleading Claims" [ref=e318] [cursor=pointer]:
+                        - /url: https://support.google.com/googleplay/android-developer/answer/9888077#misleading-claims
+                      - text: policy. We adopted this policy to promote trust and create a safe experience for users. That’s why apps that provide government information, whether or not they are government affiliated, must strictly adhere to our Misleading Claims policy.
+              - generic [ref=e319]:
+                - heading "Where this issue was found" [level=3] [ref=e328]
+                - paragraph [ref=e329]: This issue may also be found in other locations. Check all areas of your app when fixing this issue.
+                - table "Where this issue was found" [ref=e330]:
+                  - row "Location Evidence" [ref=e331]:
+                    - columnheader "Location" [ref=e332]
+                    - columnheader "Evidence" [ref=e333]
+                  - row [ref=e336]:
+                    - cell "Full description (en-US)" [ref=e337]
+                    - 'cell "SG EV Charging helps electric-vehicle drivers find charging points across Singapore. Search by postal code or place name, or use your current location to rank nearby stations by distance. See live availability (available, occupied, unavailable) sourced from LTA DataMall, along with the operator, plug types, charging speeds, and how many plugs each location has. Tap \"Directions in Maps\" for turn-by-turn navigation in Google Maps. Features: • Search by Singapore postal code or place name • Detect your location and rank charging points by distance • Live available / occupied / unavailable connector states • Operator, plug type, power rating, and last-updated info • Map-first interface with quick station chips • One-tap driving directions in Google Maps Charging data is provided by the Singapore Land Transport Authority (LTA) DataMall. This app is not affiliated with or endorsed by LTA." [ref=e338]':
+                      - generic [ref=e340]: "SG EV Charging helps electric-vehicle drivers find charging points across Singapore. Search by postal code or place name, or use your current location to rank nearby stations by distance. See live availability (available, occupied, unavailable) sourced from LTA DataMall, along with the operator, plug types, charging speeds, and how many plugs each location has. Tap \"Directions in Maps\" for turn-by-turn navigation in Google Maps. Features: • Search by Singapore postal code or place name • Detect your location and rank charging points by distance • Live available / occupied / unavailable connector states • Operator, plug type, power rating, and last-updated info • Map-first interface with quick station chips • One-tap driving directions in Google Maps Charging data is provided by the Singapore Land Transport Authority (LTA) DataMall. This app is not affiliated with or endorsed by LTA."
+            - generic [ref=e345]:
+              - generic [ref=e346]:
+                - heading "How to fix" [level=2] [ref=e355]
+                - paragraph [ref=e357]:
+                  - list [ref=e359]:
+                    - listitem [ref=e360]:
+                      - strong [ref=e361]: "If you have written documentation proving government affiliation or authorization to facilitate government services through your app:"
+                      - list [ref=e362]:
+                        - listitem [ref=e363]:
+                          - text: Submit an
+                          - link "appeal" [ref=e364] [cursor=pointer]:
+                            - /url: https://play.google.com/console/appealsForm?ts=SR
+                          - text: . If you already submitted it, please wait for a response after the
+                          - link "appeal" [ref=e365] [cursor=pointer]:
+                            - /url: https://play.google.com/console/appealsForm?ts=SR
+                          - text: case has been created.
+                    - listitem [ref=e366]:
+                      - strong [ref=e367]: "If you don't have government affiliation or authorization to facilitate government services through your app, follow these steps:"
+                      - list [ref=e368]:
+                        - listitem [ref=e369]:
+                          - text: Clarify and/or add to the information in your app.
+                          - list [ref=e370]:
+                            - listitem [ref=e371]: Identify and provide in your description a clear, official, valid and functional source(s) for all of the government information(s) shared in your app.
+                            - listitem [ref=e372]: Include in the description of your app an easy-to-see disclaimer stating that the app doesn’t represent a government entity.
+                        - listitem [ref=e373]:
+                          - text: Ensure compliance with all other
+                          - link "Developer Program Policies" [ref=e374] [cursor=pointer]:
+                            - /url: https://play.google.com/about/developer-content-policy
+                          - text: .
+                        - listitem [ref=e375]: Submit your app update.
+                - link "View emails sent by Google Play about this issue (opens in new window)" [ref=e379] [cursor=pointer]:
+                  - /url: /console/u/0/policy-emails/developers/4722227264647952214?id=4978033986502453740
+                  - generic [ref=e382]: View email
+              - generic [ref=e388]:
+                - generic [ref=e389]: Is this helpful?
+                - button "Thumb up button for reporting the information as helpful." [ref=e390] [cursor=pointer]:
+                  - img [ref=e393]: thumb_up
+                - button "Thumb down button for reporting the information as not helpful." [ref=e394] [cursor=pointer]:
+                  - img [ref=e397]: thumb_down
+          - generic [ref=e405]:
+            - generic [ref=e409]:
+              - heading "App not available on Google Play" [level=3] [ref=e419]
+              - generic [ref=e420]:
+                - generic [ref=e421]: Enforced on
+                - generic [ref=e428]:
+                  - img [ref=e432]: error
+                  - heading [level=3] [ref=e434]: Jun 21
+                - generic [ref=e435]: Error, Jun 21
+            - generic [ref=e438]:
+              - generic [ref=e439]:
+                - heading "Related resources" [level=4] [ref=e448]
+                - button "\"Misleading Claims\" opens in a new tab" [ref=e449] [cursor=pointer]:
+                  - generic [ref=e450]: Misleading Claims
+                  - img [ref=e453]: open_in_new
+                - button "\"Learn more about the enforcement process\" opens in a new tab" [ref=e454] [cursor=pointer]:
+                  - generic [ref=e455]: Learn more about the enforcement process
+                  - img [ref=e458]: open_in_new
+              - generic [ref=e459]:
+                - heading "Need more help?" [level=4] [ref=e468]
+                - generic [ref=e469]:
+                  - button "Ask the Play Help Community Connect with our community of product experts" [ref=e470] [cursor=pointer]:
+                    - img [ref=e473]: group
+                    - generic [ref=e474]:
+                      - generic [ref=e475]: Ask the Play Help Community
+                      - generic [ref=e477]: Connect with our community of product experts
+                  - button "Get support Write to Play's team of policy specialists" [ref=e478] [cursor=pointer]:
+                    - img [ref=e481]: contact_support
+                    - generic [ref=e482]:
+                      - generic [ref=e483]: Get support
+                      - generic [ref=e485]: Write to Play's team of policy specialists
+                  - button "Submit an appeal 5-8 days wait time" [ref=e486] [cursor=pointer]:
+                    - img [ref=e489]: send
+                    - generic [ref=e490]:
+                      - generic [ref=e491]: Submit an appeal
+                      - generic [ref=e493]: 5-8 days wait time
+      - generic [ref=e30]:
+        - generic [ref=e494]:
+          - link "Product updates" [ref=e495] [cursor=pointer]:
+            - /url: https://play.google.com/console/about/whats-new/
+          - link "Status dashboard" [ref=e496] [cursor=pointer]:
+            - /url: https://status.play.google.com/
+          - link "Help" [ref=e497] [cursor=pointer]:
+            - /url: /console/u/0/developers/4722227264647952214/help-and-support?app=4974001653629553328
+        - generic [ref=e498]:
+          - generic [ref=e499]: © 2026 Google
+          - link "Privacy" [ref=e500] [cursor=pointer]:
+            - /url: https://www.google.com/policies/privacy/
+          - link "Developer Distribution Agreement" [ref=e501] [cursor=pointer]:
+            - /url: https://play.google.com/about/developer-distribution-agreement.html
+          - link "Terms of Service" [ref=e502] [cursor=pointer]:
+            - /url: https://play.google.com/about/console/terms-of-service/
+  - iframe

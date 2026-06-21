@@ -1,0 +1,262 @@
+- generic [ref=e1]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img
+      - progressbar
+      - generic:
+        - img
+        - generic: Loading Google Play Console
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "Google Play Console logo" [ref=e7] [cursor=pointer]:
+          - /url: /console/u/0/developers/4722227264647952214/app-list
+          - button "Google Play Console logo" [ref=e8]
+        - generic [ref=e9]:
+          - button "Notifications Open notification center" [ref=e45]:
+            - img [ref=e49]: notifications
+            - generic [ref=e51]: Notifications
+          - generic [ref=e10]:
+            - button "SG EV Charging" [ref=e59] [cursor=pointer]:
+              - generic [ref=e63]:
+                - img [ref=e65]
+                - generic [ref=e69]: SG EV Charging
+            - button "Switch developer accounts" [ref=e14] [cursor=pointer]:
+              - img "Switch developer accounts" [ref=e16]
+    - navigation [ref=e72]:
+      - link "All apps" [ref=e73] [cursor=pointer]:
+        - /url: /console/u/0/developers/4722227264647952214/app-list
+        - img [ref=e75]: keyboard_backspace
+        - generic [ref=e76]: All apps
+      - list [ref=e77]:
+        - listitem "Dashboard" [ref=e80]:
+          - button "Dashboard" [ref=e81] [cursor=pointer]:
+            - img [ref=e84]: dashboard
+            - generic [ref=e85]: Dashboard
+        - listitem "Statistics" [ref=e88]:
+          - button "Statistics" [ref=e89] [cursor=pointer]:
+            - img [ref=e92]: bar_chart
+            - generic [ref=e93]: Statistics
+        - listitem "Publishing overview" [ref=e96]:
+          - button "Publishing overview" [ref=e97] [cursor=pointer]:
+            - img [ref=e100]: overview
+            - generic [ref=e101]: Publishing overview
+        - listitem "Protected with Play" [ref=e104]:
+          - button "Protected with Play" [ref=e105] [cursor=pointer]:
+            - img [ref=e108]: shield
+            - generic [ref=e109]: Protected with Play
+        - listitem "Test and release" [ref=e112]:
+          - button "Test and release" [ref=e113] [cursor=pointer]:
+            - img [ref=e116]: rocket_launch
+            - generic [ref=e117]: Test and release
+        - listitem "Monitor and improve" [ref=e120]:
+          - button "Monitor and improve" [ref=e121] [cursor=pointer]:
+            - img [ref=e124]: vital_signs
+            - generic [ref=e125]: Monitor and improve
+          - list [ref=e126]:
+            - generic [ref=e128]:
+              - listitem "Reach and devices" [ref=e130]:
+                - button "Reach and devices" [ref=e131] [cursor=pointer]:
+                  - generic [ref=e132]: Reach and devices
+                  - img [ref=e134]: expand_more
+              - listitem "Ratings and reviews" [ref=e136]:
+                - button "Ratings and reviews" [ref=e137] [cursor=pointer]:
+                  - generic [ref=e138]: Ratings and reviews
+                  - img [ref=e140]: expand_more
+              - listitem "Android vitals" [ref=e142]:
+                - button "Android vitals" [ref=e143] [cursor=pointer]:
+                  - generic [ref=e144]: Android vitals
+                  - img [ref=e146]: expand_more
+              - listitem "Policy and programs" [ref=e148]:
+                - button "Policy and programs" [ref=e149] [cursor=pointer]:
+                  - generic [ref=e150]: Policy and programs
+                  - img [ref=e152]: expand_less
+                - list [ref=e153]:
+                  - generic [ref=e155]:
+                    - listitem "Policy status" [ref=e157]:
+                      - button "Policy status" [ref=e158] [cursor=pointer]:
+                        - generic [ref=e159]: Policy status
+                    - listitem "App content" [ref=e161]:
+                      - button "App content" [ref=e162] [cursor=pointer]:
+                        - generic [ref=e163]: App content
+                    - listitem "Teacher Approved" [ref=e165]:
+                      - button "Teacher Approved" [ref=e166] [cursor=pointer]:
+                        - generic [ref=e167]: Teacher Approved
+        - listitem "Grow users" [ref=e170]:
+          - button "Grow users" [ref=e171] [cursor=pointer]:
+            - img [ref=e174]: finance_mode
+            - generic [ref=e175]: Grow users
+        - listitem "Monetize with Play" [ref=e178]:
+          - button "Monetize with Play" [ref=e179] [cursor=pointer]:
+            - img [ref=e182]: sell
+            - generic [ref=e183]: Monetize with Play
+    - generic [ref=e22]:
+      - generic [ref=e259]:
+        - generic [ref=e263]:
+          - link "Go back to App content" [ref=e266] [cursor=pointer]:
+            - /url: /console/u/0/developers/4722227264647952214/app/4974001653629553328/app-content/overview
+            - img [ref=e270]: keyboard_backspace
+            - generic [ref=e271]: App content
+          - generic [ref=e275]:
+            - heading "Content ratings" [level=1] [ref=e280]
+            - button "Discard changes" [disabled] [ref=e285]:
+              - generic [ref=e288]: Discard changes
+        - generic [ref=e290]:
+          - generic [ref=e295]:
+            - tablist [ref=e296]:
+              - tab "Step 1 of 3, Category" [disabled] [ref=e297]:
+                - img [ref=e419]: check
+                - generic [ref=e302]: Category
+              - tab "Step 2 of 3, Questionnaire" [disabled] [ref=e304]:
+                - img [ref=e837]: check
+                - generic [ref=e309]: Questionnaire
+              - tab "Step 3 of 3, Summary" [active] [selected] [ref=e311]:
+                - generic [ref=e314]: "3"
+                - generic [ref=e316]: Summary
+            - tabpanel [ref=e318]:
+              - generic [ref=e838]:
+                - generic [ref=e840]:
+                  - heading "Summary" [level=2] [ref=e849]
+                  - generic [ref=e853]:
+                    - paragraph [ref=e854]: Ratings shown below may differ from the ratings shown to users on Google Play.
+                    - list [ref=e855]:
+                      - listitem [ref=e856]: Google may reject your app or app update for misrepresentation of your app’s content
+                      - listitem [ref=e857]: Google may use your questionnaire responses to generate ratings for specific territories as required by local law
+                      - listitem [ref=e858]: Rating authorities participating in IARC may change your app's rating after they review it
+                    - paragraph [ref=e859]:
+                      - text: Google and IARC will share your contact information, questionnaire responses, ratings, developer support requests, and app details with rating authorities.
+                      - link "Learn more about Content ratings for apps and games, Opens in a new tab" [ref=e861] [cursor=pointer]:
+                        - /url: https://support.google.com/googleplay/android-developer/answer/188189
+                        - text: Learn more
+                - generic [ref=e862]:
+                  - generic [ref=e867]:
+                    - generic [ref=e869]: Category
+                    - generic [ref=e871]: All Other App Types
+                  - heading "Your ratings" [level=2] [ref=e883]
+                  - generic [ref=e885]:
+                    - generic [ref=e888]:
+                      - heading "Brazil" [level=3] [ref=e894]
+                      - generic [ref=e897]: "Rating authority: Classificação Indicativa (ClassInd)"
+                    - generic [ref=e902]:
+                      - generic [ref=e904]:
+                        - generic [ref=e906]: Rating
+                        - generic [ref=e911]:
+                          - img "All ages" [ref=e913]
+                          - generic [ref=e917]: All ages
+                      - generic [ref=e919]:
+                        - generic [ref=e921]: Content descriptors
+                        - generic [ref=e924]: "-"
+                  - generic [ref=e927]:
+                    - generic [ref=e930]:
+                      - heading "North America" [level=3] [ref=e936]
+                      - generic [ref=e939]: "Rating authority: Entertainment Software Rating Board (ESRB)"
+                    - generic [ref=e944]:
+                      - generic [ref=e946]:
+                        - generic [ref=e948]: Rating
+                        - generic [ref=e953]:
+                          - img "Everyone" [ref=e955]
+                          - generic [ref=e959]: Everyone
+                      - generic [ref=e961]:
+                        - generic [ref=e963]: Content descriptors
+                        - generic [ref=e966]: "-"
+                  - generic [ref=e969]:
+                    - generic [ref=e972]:
+                      - heading "Europe" [level=3] [ref=e978]
+                      - generic [ref=e981]: "Rating authority: Pan-European Game Information (PEGI)"
+                    - generic [ref=e986]:
+                      - generic [ref=e988]:
+                        - generic [ref=e990]: Rating
+                        - generic [ref=e995]:
+                          - img "PEGI 3" [ref=e997]
+                          - generic [ref=e1001]: PEGI 3
+                      - generic [ref=e1003]:
+                        - generic [ref=e1005]: Content descriptors
+                        - generic [ref=e1008]: "-"
+                  - generic [ref=e1011]:
+                    - generic [ref=e1014]:
+                      - heading "Germany" [level=3] [ref=e1020]
+                      - generic [ref=e1023]: "Rating authority: Unterhaltungssoftware Selbstkontrolle (USK)"
+                    - generic [ref=e1028]:
+                      - generic [ref=e1030]:
+                        - generic [ref=e1032]: Rating
+                        - generic [ref=e1037]:
+                          - 'img "USK: All ages" [ref=e1039]'
+                          - generic [ref=e1043]: "USK: All ages"
+                      - generic [ref=e1045]:
+                        - generic [ref=e1047]: Content descriptors
+                        - generic [ref=e1050]: "-"
+                  - generic [ref=e1053]:
+                    - generic [ref=e1056]:
+                      - heading "Rest of world" [level=3] [ref=e1062]
+                      - generic [ref=e1065]: "Rating authority: IARC Generic"
+                    - generic [ref=e1070]:
+                      - generic [ref=e1072]:
+                        - generic [ref=e1074]: Rating
+                        - generic [ref=e1079]:
+                          - img "Rated for 3+" [ref=e1081]
+                          - generic [ref=e1085]: Rated for 3+
+                      - generic [ref=e1087]:
+                        - generic [ref=e1089]: Content descriptors
+                        - generic [ref=e1092]: "-"
+                  - generic [ref=e1095]:
+                    - generic [ref=e1098]:
+                      - heading "Russia" [level=3] [ref=e1104]
+                      - generic [ref=e1107]: "Rating authority: Google Play"
+                    - generic [ref=e1112]:
+                      - generic [ref=e1114]:
+                        - generic [ref=e1116]: Rating
+                        - generic [ref=e1121]:
+                          - img "Rated for 3+" [ref=e1123]
+                          - generic [ref=e1127]: Rated for 3+
+                      - generic [ref=e1129]:
+                        - generic [ref=e1131]: Content descriptors
+                        - generic [ref=e1134]: "-"
+                  - generic [ref=e1137]:
+                    - generic [ref=e1140]:
+                      - heading "South Korea" [level=3] [ref=e1146]
+                      - generic [ref=e1149]: "Rating authority: Google Play"
+                    - generic [ref=e1150]:
+                      - generic [ref=e1154]:
+                        - img [ref=e1158]: warning
+                        - generic [ref=e1159]:
+                          - generic [ref=e1160]: Games that aren't suitable for users under 19 may be removed from Google Play in South Korea, unless they're rated by GRAC.
+                          - link "Learn more about GRAC, Opens in a new tab" [ref=e1162] [cursor=pointer]:
+                            - /url: https://www.grac.or.kr/english/enforcement/Enforcement.aspx
+                            - text: Learn more
+                      - generic [ref=e1166]:
+                        - generic [ref=e1168]:
+                          - generic [ref=e1170]: Rating
+                          - generic [ref=e1175]:
+                            - img "Rated for 3+" [ref=e1177]
+                            - generic [ref=e1181]: Rated for 3+
+                        - generic [ref=e1183]:
+                          - generic [ref=e1185]: Content descriptors
+                          - generic [ref=e1188]: "-"
+          - generic [ref=e1193]:
+            - generic [ref=e1194]:
+              - img [ref=e1198]: check_circle
+              - generic [ref=e1199]: If you save, changes will be saved in Publishing overview, ready for you to send for review
+            - generic [ref=e1202]:
+              - button "Back" [ref=e1204]:
+                - generic [ref=e1207]: Back
+              - button "Save" [ref=e1209] [cursor=pointer]:
+                - generic [ref=e1212]: Save
+      - generic [ref=e30]:
+        - generic [ref=e408]:
+          - link "Product updates" [ref=e409] [cursor=pointer]:
+            - /url: https://play.google.com/console/about/whats-new/
+          - link "Status dashboard" [ref=e410] [cursor=pointer]:
+            - /url: https://status.play.google.com/
+          - link "Help" [ref=e411] [cursor=pointer]:
+            - /url: /console/u/0/developers/4722227264647952214/help-and-support?app=4974001653629553328
+        - generic [ref=e412]:
+          - generic [ref=e413]: © 2026 Google
+          - link "Privacy" [ref=e414] [cursor=pointer]:
+            - /url: https://www.google.com/policies/privacy/
+          - link "Developer Distribution Agreement" [ref=e415] [cursor=pointer]:
+            - /url: https://play.google.com/about/developer-distribution-agreement.html
+          - link "Terms of Service" [ref=e416] [cursor=pointer]:
+            - /url: https://play.google.com/about/console/terms-of-service/
+  - status [ref=e831]

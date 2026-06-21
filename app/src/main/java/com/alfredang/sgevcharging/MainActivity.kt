@@ -14,7 +14,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.core.content.ContextCompat
 import com.alfredang.sgevcharging.data.ChargingSearchResult
-import com.alfredang.sgevcharging.ui.SGEVChargingScreen
+import com.alfredang.sgevcharging.ui.RootScreen
 import com.alfredang.sgevcharging.ui.theme.SGEVChargingTheme
 import androidx.lifecycle.viewmodel.compose.viewModel
 
@@ -47,7 +47,7 @@ class MainActivity : ComponentActivity() {
 
             SGEVChargingTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
-                    SGEVChargingScreen(
+                    RootScreen(
                         viewModel = vm,
                         onRequestCurrentLocation = {
                             requestLocation(

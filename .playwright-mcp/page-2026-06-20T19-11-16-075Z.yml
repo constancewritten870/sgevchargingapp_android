@@ -1,0 +1,11 @@
+- generic [ref=e9]:
+  - img "Google Play Console logo" [ref=e11]
+  - generic [ref=e12]:
+    - button "angch@tertiaryinfotech.com" [ref=e14] [cursor=pointer]:
+      - generic [ref=e16]:
+        - text: angch@tertiaryinfotech.com
+        - img [ref=e18]: keyboard_arrow_down
+    - heading "Choose developer account" [level=2] [ref=e27]
+    - listbox [ref=e28]:
+      - option "Tertiary Infotech Academy" [ref=e29] [cursor=pointer]:
+        - generic [ref=e31]: Tertiary Infotech Academy

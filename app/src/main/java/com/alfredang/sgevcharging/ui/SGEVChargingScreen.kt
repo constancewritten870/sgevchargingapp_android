@@ -24,6 +24,7 @@ import androidx.compose.material.icons.filled.Bolt
 import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.Directions
 import androidx.compose.material.icons.filled.ElectricCar
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.MyLocation
 import androidx.compose.material.icons.filled.Power
@@ -52,8 +53,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -293,7 +296,39 @@ private fun SearchPanel(
                     overflow = TextOverflow.Ellipsis,
                 )
             }
+            DataSourceAttribution()
         }
+    }
+}
+
+/**
+ * Required source attribution: this app surfaces public EV charging data published by
+ * the Singapore Land Transport Authority (LTA) DataMall. The link points to the
+ * official government data source.
+ */
+@Composable
+private fun DataSourceAttribution() {
+    val uriHandler = LocalUriHandler.current
+    val source = "https://datamall.lta.gov.sg/content/datamall/en.html"
+    Row(
+        modifier = Modifier
+            .clickable { uriHandler.openUri(source) }
+            .padding(top = 2.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Icon(
+            Icons.Filled.Info,
+            contentDescription = null,
+            tint = BrandSecondary,
+            modifier = Modifier.size(14.dp),
+        )
+        Spacer(modifier = Modifier.width(6.dp))
+        Text(
+            text = "Data source: LTA DataMall (datamall.lta.gov.sg)",
+            fontSize = 12.sp,
+            color = BrandSecondary,
+            textDecoration = TextDecoration.Underline,
+        )
     }
 }
 

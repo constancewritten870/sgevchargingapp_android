@@ -1,0 +1,152 @@
+- generic [ref=e1]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img
+      - progressbar
+      - generic:
+        - img
+        - generic: Loading Google Play Console
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "Google Play Console logo" [ref=e7] [cursor=pointer]:
+          - /url: /console/u/0/developers/4722227264647952214/app-list
+          - button "Google Play Console logo" [ref=e8]
+        - generic [ref=e9]:
+          - button "Notifications Open notification center" [ref=e137]:
+            - img [ref=e141]: notifications
+            - generic [ref=e143]: Notifications
+          - generic [ref=e10]:
+            - button "SG EV Charging" [ref=e151] [cursor=pointer]:
+              - generic [ref=e155]:
+                - img [ref=e157]
+                - generic [ref=e161]: SG EV Charging
+            - button "Switch developer accounts" [ref=e14] [cursor=pointer]:
+              - img "Switch developer accounts" [ref=e16]
+    - navigation [ref=e164]:
+      - link "All apps" [ref=e165] [cursor=pointer]:
+        - /url: /console/u/0/developers/4722227264647952214/app-list
+        - img [ref=e167]: keyboard_backspace
+        - generic [ref=e168]: All apps
+      - list [ref=e169]:
+        - listitem "Dashboard" [ref=e172]:
+          - button "Dashboard" [ref=e173] [cursor=pointer]:
+            - img [ref=e176]: dashboard
+            - generic [ref=e177]: Dashboard
+        - listitem "Statistics" [ref=e180]:
+          - button "Statistics" [ref=e181] [cursor=pointer]:
+            - img [ref=e184]: bar_chart
+            - generic [ref=e185]: Statistics
+        - listitem "Publishing overview" [ref=e188]:
+          - button "Publishing overview" [ref=e189] [cursor=pointer]:
+            - img [ref=e192]: overview
+            - generic [ref=e193]: Publishing overview
+        - listitem "Protected with Play" [ref=e196]:
+          - button "Protected with Play" [ref=e197] [cursor=pointer]:
+            - img [ref=e200]: shield
+            - generic [ref=e201]: Protected with Play
+        - listitem "Test and release" [ref=e204]:
+          - button "Test and release" [ref=e205] [cursor=pointer]:
+            - img [ref=e208]: rocket_launch
+            - generic [ref=e209]: Test and release
+        - listitem "Monitor and improve" [ref=e212]:
+          - button "Monitor and improve" [ref=e213] [cursor=pointer]:
+            - img [ref=e216]: vital_signs
+            - generic [ref=e217]: Monitor and improve
+          - list [ref=e218]:
+            - generic [ref=e220]:
+              - listitem "Reach and devices" [ref=e222]:
+                - button "Reach and devices" [ref=e223] [cursor=pointer]:
+                  - generic [ref=e224]: Reach and devices
+                  - img [ref=e226]: expand_more
+              - listitem "Ratings and reviews" [ref=e228]:
+                - button "Ratings and reviews" [ref=e229] [cursor=pointer]:
+                  - generic [ref=e230]: Ratings and reviews
+                  - img [ref=e232]: expand_more
+              - listitem "Android vitals" [ref=e234]:
+                - button "Android vitals" [ref=e235] [cursor=pointer]:
+                  - generic [ref=e236]: Android vitals
+                  - img [ref=e238]: expand_more
+              - listitem "Policy and programs" [ref=e240]:
+                - button "Policy and programs" [ref=e241] [cursor=pointer]:
+                  - generic [ref=e242]: Policy and programs
+                  - img [ref=e244]: expand_less
+                - list [ref=e245]:
+                  - generic [ref=e247]:
+                    - listitem "Policy status" [ref=e249]:
+                      - button "Policy status" [ref=e250] [cursor=pointer]:
+                        - generic [ref=e251]: Policy status
+                    - listitem "App content" [ref=e253]:
+                      - button "App content" [ref=e254] [cursor=pointer]:
+                        - generic [ref=e255]: App content
+                    - listitem "Teacher Approved" [ref=e257]:
+                      - button "Teacher Approved" [ref=e258] [cursor=pointer]:
+                        - generic [ref=e259]: Teacher Approved
+        - listitem "Grow users" [ref=e262]:
+          - button "Grow users" [ref=e263] [cursor=pointer]:
+            - img [ref=e266]: finance_mode
+            - generic [ref=e267]: Grow users
+        - listitem "Monetize with Play" [ref=e270]:
+          - button "Monetize with Play" [ref=e271] [cursor=pointer]:
+            - img [ref=e274]: sell
+            - generic [ref=e275]: Monetize with Play
+    - generic [ref=e22]:
+      - generic [ref=e43]:
+        - generic [ref=e47]:
+          - link "Go back to App content" [ref=e50] [cursor=pointer]:
+            - /url: /console/u/0/developers/4722227264647952214/app/4974001653629553328/app-content/overview
+            - img [ref=e54]: keyboard_backspace
+            - generic [ref=e55]: App content
+          - heading "Ads" [level=1] [ref=e64]
+        - generic [ref=e65]:
+          - paragraph [ref=e69]:
+            - text: Let us know whether your app contains ads. This includes ads delivered by third party ad networks. Make sure this information is accurate and is kept up to date.
+            - link "Learn more about ads declaration, Opens in a new tab" [ref=e71] [cursor=pointer]:
+              - /url: https://support.google.com/googleplay/android-developer/answer/9815348#ads
+              - text: Learn more
+          - group "Ads question" [ref=e77]:
+            - generic [ref=e80]: Ads
+            - generic [ref=e82]:
+              - generic [ref=e85]:
+                - text: Does your app contain ads? Check the
+                - link "Ads policy" [ref=e86] [cursor=pointer]:
+                  - /url: https://play.google.com/about/monetization-ads/ads/
+                - text: to make sure your app is compliant.
+              - radiogroup "Ads" [ref=e87]:
+                - generic [ref=e88] [cursor=pointer]:
+                  - radio "Yes, my app contains ads" [ref=e90]
+                  - generic [ref=e93]:
+                    - text: Yes, my app contains ads
+                    - generic [ref=e94]:
+                      - text: The 'Contains ads' label will be shown next to your app on Google Play.
+                      - link "Learn more about ads declaration, Opens in a new tab" [ref=e96]:
+                        - /url: https://support.google.com/googleplay/android-developer/answer/9815348#ads
+                        - text: Learn more
+                - generic [ref=e97] [cursor=pointer]:
+                  - radio "No, my app does not contain ads" [checked] [active] [ref=e99]
+                  - generic [ref=e102]: No, my app does not contain ads
+          - generic [ref=e106]:
+            - generic [ref=e277]: If you save, changes will be saved in Publishing overview, ready for you to send for review
+            - generic [ref=e110]:
+              - button "Discard" [ref=e279]:
+                - generic [ref=e282]: Discard
+              - button "Save" [ref=e284]:
+                - generic [ref=e287]: Save
+      - generic [ref=e30]:
+        - generic [ref=e123]:
+          - link "Product updates" [ref=e124] [cursor=pointer]:
+            - /url: https://play.google.com/console/about/whats-new/
+          - link "Status dashboard" [ref=e125] [cursor=pointer]:
+            - /url: https://status.play.google.com/
+          - link "Help" [ref=e126] [cursor=pointer]:
+            - /url: /console/u/0/developers/4722227264647952214/help-and-support?app=4974001653629553328
+        - generic [ref=e127]:
+          - generic [ref=e128]: © 2026 Google
+          - link "Privacy" [ref=e129] [cursor=pointer]:
+            - /url: https://www.google.com/policies/privacy/
+          - link "Developer Distribution Agreement" [ref=e130] [cursor=pointer]:
+            - /url: https://play.google.com/about/developer-distribution-agreement.html
+          - link "Terms of Service" [ref=e131] [cursor=pointer]:
+            - /url: https://play.google.com/about/console/terms-of-service/

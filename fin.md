@@ -1,0 +1,208 @@
+- generic [ref=e22]:
+  - generic [ref=e187]:
+    - generic [ref=e191]:
+      - generic:
+        - generic:
+          - link "Go back to App content":
+            - /url: /console/u/0/developers/4722227264647952214/app/4974001653629553328/app-content/overview
+            - img [ref=e198] [cursor=pointer]: keyboard_backspace
+            - generic [ref=e199] [cursor=pointer]: App content
+      - heading "Financial features" [level=1] [ref=e208]
+    - generic [ref=e212]:
+      - generic [ref=e213]:
+        - tablist [ref=e214]:
+          - tab "Step 1 of 2, Financial features in your app" [selected] [ref=e215]:
+            - generic [ref=e218]: "1"
+            - generic [ref=e220]: Financial features in your app
+          - tab "Step 2 of 2, Documentation" [disabled] [ref=e222]:
+            - generic [ref=e225]: "2"
+            - generic [ref=e227]: Documentation
+        - tabpanel [ref=e229]:
+          - generic [ref=e230]:
+            - heading "Financial features in your app" [level=2] [ref=e241]
+            - group "Select all of the financial features your app provides. This helps us to make sure the right teams review your submission." [ref=e249]:
+              - generic [ref=e254]: App features
+              - generic [ref=e256]:
+                - generic [ref=e259]: Select all of the financial features your app provides. This helps us to make sure the right teams review your submission.
+                - group "Banking and loans" [ref=e262]:
+                  - generic [ref=e264]:
+                    - generic [ref=e267]: Banking and loans
+                    - generic [ref=e268] [cursor=pointer]:
+                      - generic [ref=e269]:
+                        - checkbox "Personal loan direct lender" [ref=e270]
+                        - generic:
+                          - img
+                      - generic [ref=e273]: Personal loan direct lender
+                    - generic [ref=e274] [cursor=pointer]:
+                      - generic [ref=e275]:
+                        - checkbox "Loan facilitator" [ref=e276]
+                        - generic:
+                          - img
+                      - generic [ref=e279]: Loan facilitator
+                    - generic [ref=e280] [cursor=pointer]:
+                      - generic [ref=e281]:
+                        - checkbox "Payday loans" [ref=e282]
+                        - generic:
+                          - img
+                      - generic [ref=e285]: Payday loans
+                    - generic [ref=e286] [cursor=pointer]:
+                      - generic [ref=e287]:
+                        - checkbox "Banking" [ref=e288]
+                        - generic:
+                          - img
+                      - generic [ref=e291]: Banking
+                    - generic [ref=e292] [cursor=pointer]:
+                      - generic [ref=e293]:
+                        - checkbox "Line of credit" [ref=e294]
+                        - generic:
+                          - img
+                      - generic [ref=e297]: Line of credit
+                    - generic [ref=e298] [cursor=pointer]:
+                      - generic [ref=e299]:
+                        - checkbox "Earned wage advances" [ref=e300]
+                        - generic:
+                          - img
+                      - generic [ref=e303]: Earned wage advances
+                    - generic [ref=e304] [cursor=pointer]:
+                      - generic [ref=e305]:
+                        - checkbox "Microfinance banking" [ref=e306]
+                        - generic:
+                          - img
+                      - generic [ref=e309]: Microfinance banking
+                - group "Payments and transfers" [ref=e312]:
+                  - generic [ref=e314]:
+                    - generic [ref=e317]: Payments and transfers
+                    - generic [ref=e318] [cursor=pointer]:
+                      - generic [ref=e319]:
+                        - checkbox "Mobile payments and digital wallets" [ref=e320]
+                        - generic:
+                          - img
+                      - generic [ref=e323]: Mobile payments and digital wallets
+                    - generic [ref=e324] [cursor=pointer]:
+                      - generic [ref=e325]:
+                        - checkbox "Money transfer and wire services" [ref=e326]
+                        - generic:
+                          - img
+                      - generic [ref=e329]: Money transfer and wire services
+                - group "Purchase agreements" [ref=e332]:
+                  - generic [ref=e334]:
+                    - generic [ref=e337]: Purchase agreements
+                    - generic [ref=e338] [cursor=pointer]:
+                      - generic [ref=e339]:
+                        - checkbox "Rewards, points, frequent flier miles, and other incentives" [ref=e340]
+                        - generic:
+                          - img
+                      - generic [ref=e343]: Rewards, points, frequent flier miles, and other incentives
+                    - generic [ref=e344] [cursor=pointer]:
+                      - generic [ref=e345]:
+                        - checkbox "Buy now, pay later" [ref=e346]
+                        - generic:
+                          - img
+                      - generic [ref=e349]: Buy now, pay later
+                - group "Trading and funds" [ref=e352]:
+                  - generic [ref=e354]:
+                    - generic [ref=e357]: Trading and funds
+                    - generic [ref=e358] [cursor=pointer]:
+                      - generic [ref=e359]:
+                        - checkbox "Cryptocurrency wallet" [ref=e360]
+                        - generic:
+                          - img
+                      - generic [ref=e363]: Cryptocurrency wallet
+                    - generic [ref=e364] [cursor=pointer]:
+                      - generic [ref=e365]:
+                        - checkbox "Cryptocurrency exchange" [ref=e366]
+                        - generic:
+                          - img
+                      - generic [ref=e369]: Cryptocurrency exchange
+                    - generic [ref=e370] [cursor=pointer]:
+                      - generic [ref=e371]:
+                        - checkbox "Tokenized digital asset (NFT) sales, trading, and awards" [ref=e372]
+                        - generic:
+                          - img
+                      - generic [ref=e375]: Tokenized digital asset (NFT) sales, trading, and awards
+                    - generic [ref=e376] [cursor=pointer]:
+                      - generic [ref=e377]:
+                        - checkbox "Stock trading and portfolio management" [ref=e378]
+                        - generic:
+                          - img
+                      - generic [ref=e381]: Stock trading and portfolio management
+                    - generic [ref=e382] [cursor=pointer]:
+                      - generic [ref=e383]:
+                        - checkbox "Crowdfunding and chit funds" [ref=e384]
+                        - generic:
+                          - img
+                      - generic [ref=e387]: Crowdfunding and chit funds
+                    - generic [ref=e388] [cursor=pointer]:
+                      - generic [ref=e389]:
+                        - checkbox "Prediction markets Learn more about the Prediction Markets pilot" [ref=e390]
+                        - generic:
+                          - img
+                      - generic [ref=e391]:
+                        - generic [ref=e393]: Prediction markets
+                        - generic [ref=e395]:
+                          - text: Learn more about the
+                          - link "Prediction Markets pilot" [ref=e396]:
+                            - /url: https://support.google.com/googleplay/android-developer/answer/16902027
+                - group "Support services" [ref=e399]:
+                  - generic [ref=e401]:
+                    - generic [ref=e404]: Support services
+                    - generic [ref=e405] [cursor=pointer]:
+                      - generic [ref=e406]:
+                        - checkbox "Credit monitoring and reporting" [ref=e407]
+                        - generic:
+                          - img
+                      - generic [ref=e410]: Credit monitoring and reporting
+                    - generic [ref=e411] [cursor=pointer]:
+                      - generic [ref=e412]:
+                        - checkbox "Financial advice" [ref=e413]
+                        - generic:
+                          - img
+                      - generic [ref=e416]: Financial advice
+                    - generic [ref=e417] [cursor=pointer]:
+                      - generic [ref=e418]:
+                        - checkbox "Insurance" [ref=e419]
+                        - generic:
+                          - img
+                      - generic [ref=e422]: Insurance
+                - group "Other" [ref=e425]:
+                  - generic [ref=e427]:
+                    - generic [ref=e430]: Other
+                    - generic [ref=e431] [cursor=pointer]:
+                      - generic [ref=e432]:
+                        - checkbox "Other" [ref=e433]
+                        - generic:
+                          - img
+                      - generic [ref=e436]: Other
+                    - strong [ref=e443]: Or
+                    - generic [ref=e444] [cursor=pointer]:
+                      - generic [ref=e445]:
+                        - checkbox "My app doesn't provide any financial features" [active] [ref=e446]
+                        - generic:
+                          - img
+                      - generic [ref=e449]: My app doesn't provide any financial features
+        - generic [ref=e450]: Step 1 of 2, Financial features in your app
+      - generic [ref=e458]:
+        - button "Discard" [ref=e459]:
+          - generic [ref=e462]: Discard
+        - button "Back" [disabled] [ref=e463]:
+          - generic [ref=e466]: Back
+        - button "Save as draft" [ref=e467]:
+          - generic [ref=e470]: Save as draft
+        - button "Next" [disabled] [ref=e471]:
+          - generic [ref=e474]: Next
+  - generic [ref=e30]:
+    - generic [ref=e477]:
+      - link "Product updates" [ref=e478] [cursor=pointer]:
+        - /url: https://play.google.com/console/about/whats-new/
+      - link "Status dashboard" [ref=e479] [cursor=pointer]:
+        - /url: https://status.play.google.com/
+      - link "Help" [ref=e480] [cursor=pointer]:
+        - /url: /console/u/0/developers/4722227264647952214/help-and-support?app=4974001653629553328
+    - generic [ref=e481]:
+      - generic [ref=e482]: © 2026 Google
+      - link "Privacy" [ref=e483] [cursor=pointer]:
+        - /url: https://www.google.com/policies/privacy/
+      - link "Developer Distribution Agreement" [ref=e484] [cursor=pointer]:
+        - /url: https://play.google.com/about/developer-distribution-agreement.html
+      - link "Terms of Service" [ref=e485] [cursor=pointer]:
+        - /url: https://play.google.com/about/console/terms-of-service/
